@@ -1,0 +1,46 @@
+.navbar{
+    display:flex;
+    background-color: rgb(245, 243, 245);
+    justify-content: left;
+    padding: 20px;
+}
+.navbar a {
+  color: rgb(7, 3, 3);
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+.navbar img{
+justify-content: left;
+}
+header{
+    text-align: center;
+    color: black;
+    background:rgb(240, 219, 192);
+    padding: 10px;
+}
+article{
+    font-style: italic;
+    color: black;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(61, 92, 119);
+    background: rgb(215, 211, 248);
+}
+aside{
+font-family: Arial, Helvetica, sans-serif;
+    color: rgb(61, 92, 119);
+    background: rgb(215, 211, 248);
+    display:block;
+    background-color: bisque;
+    padding: 30px;
+}
+
+footer{
+    text-align: center;
+    justify-content: flex-end;
+}
