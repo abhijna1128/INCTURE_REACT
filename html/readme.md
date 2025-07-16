@@ -1,3 +1,4 @@
+Day2:
 CSS:
 **Three types of CSS:
 >>inline
@@ -55,3 +56,13 @@ Layout is how elements are placed or arranged on our webpage
 --display: grid
 -- grid-template-columns: 1fr 1fr 1fr;
 --gap - 
+
+*****************************************************************************************************************************************
+
+Day 3:
+Javascript:
+Programming lang which makes our webapage dynamic
+
+**variable:
+Container to store the values
+
