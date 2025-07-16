@@ -65,4 +65,61 @@ Programming lang which makes our webapage dynamic
 
 **variable:
 Container to store the values
+>>var keyword:
+--In java variable can be created using var keyword
+--var keyword has global scope
+--var keyword can be redeclared 
 
+>>let and const keyword:
+--In modern approach can create it using let and const keyword
+--let keyword has block or functional level scope
+--let cannot be redeclared
+--cannot reassign value to a const variable
+
+ECMA script version is the version of javascript
+
+**Datatypes:
+
+>>Primitive datatypes:
+number - any number decimal or integer
+String - any text
+boolean - store any true or false condition
+undefined - variable is decalred but not initialised
+null - varian=ble with no value
+BigInt - laarger number beyond normal number
+Symbol -
+
+>>Reference datatype:
+Array - 
+Object - 
+Function - 
+
+**Operators in javascript:
+
+>>Arithmetic Operator- performing arithmatic operations
+>>Assignment operator - assign the values(=,+=,-=,*=)
+>>Comparision Operator - 
+>>Logical Operator
+>>Unary Operator
+>>Ternary Operator
+>>bitwise Opertor etc.
+
+**Control Statement:
+
+>>Conditional Statement:
+--if
+--if... else
+--if...else if ...else
+--switch
+
+>>Looping statements:
+--for loop - when the number of iterations are known in the beginnning 
+--while loop 
+--do while loop
+
+break - go out of the loop
+continue - skips the particular iteration
+
+**Array:
+IN js its not a that which stores the similar datatypes elements
+while sorting its not going to sort directly its going to convert into a string and then compare
