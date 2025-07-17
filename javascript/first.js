@@ -176,19 +176,18 @@
 // data.reverse();
 // console.log(data);
 
-let data = [10, 200, 300, 210, 1, 100, 5];
+// let data = [10, 200, 300, 210, 1, 100, 5];
 
-for (let i = 0; i < data.length - 1; i++) {
-    for (let j = i + 1; j < data.length; j++) {
-        if (data[i] > data[j]) {
-            // Swap data[i] and data[j]
-            let temp = data[i];
-            data[i] = data[j];
-            data[j] = temp;
-        }
-    }
-}
+// for (let i = 0; i < data.length - 1; i++) {
+//     for (let j = i + 1; j < data.length; j++) {
+//         if (data[i] > data[j]) {
+//             // Swap data[i] and data[j]
+//             let temp = data[i];
+//             data[i] = data[j];
+//             data[j] = temp;
+//         }
+//     }
+// }
 
-console.log(data);
-
+// console.log(data);
 

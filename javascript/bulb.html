@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="head1">Welcome to our Bulb automation</h1>
+    <br><br>
+    <img id="image" src="https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg"></a>
+    <br><br>
+    <button Onclick="handleClick()">On</button>
+    <button onClick="setAtt()">Off</button>
+    <button id="ontoggle" onClick="toggleBulb()">ON_BULB</button>
+    <script>
+    function handleClick(){
+        let obj=document.getElementById("image");
+        obj.setAttribute("src","https://thumbs.dreamstime.com/b/web-183914504.jpg");
+    }
+    function setAtt()
+    {
+        let obj=document.getElementById("image");
+        obj.setAttribute("src","https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg");
+
+     }
+     function toggleBulb(){
+       let obj=document.getElementById("image");
+       let srcvalue=obj.getAttribute("src");
+       let togbtn=document.getElementById("ontoggle")
+       let togtxt=togbtn.innerHTML;
+       if(srcvalue=="https://i.pinimg.com/564x/e0/fd/25/e0fd25f9127a9a109a0648c83ee61643.jpg")
+       {
+        handleClick();
+        togbtn.innerHTML="OFF_BULB";
+       }
+       else{
+        setAtt();
+        togbtn.innerHTML="ON_BULB";
+       }
+    
+     }
+
+</script>
+</body>
+
+
+</html>

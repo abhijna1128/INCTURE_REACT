@@ -1,0 +1,3 @@
+function clearDisplay(){
+    clearDisplay.value
+}
