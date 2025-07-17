@@ -176,18 +176,19 @@
 // data.reverse();
 // console.log(data);
 
-let data=[10,200,300,210,1,100,5]
-let s=[]
-for(i=0;i<=data.length-1;i++){
-    for(let j=1+1;j<data.length-1;j++){
-    if(data[i]<data[j])
-    {
-         let temp=data[i];
-        data[i]=data[j];
-        data[j]=temp;
-        
+let data = [10, 200, 300, 210, 1, 100, 5];
+
+for (let i = 0; i < data.length - 1; i++) {
+    for (let j = i + 1; j < data.length; j++) {
+        if (data[i] > data[j]) {
+            // Swap data[i] and data[j]
+            let temp = data[i];
+            data[i] = data[j];
+            data[j] = temp;
+        }
     }
 }
 
-}
+console.log(data);
+
 
