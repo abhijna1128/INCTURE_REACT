@@ -1,0 +1,29 @@
+ body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    height: 100vh;
+    background: #ece0eb; 
+  }
+  h1{
+    text-align: center;
+    font-size: 45px;
+  } 
+#display{
+    width: 50%; 
+    height: 30px; 
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    background: #fff; 
+    color: #333;
+    text-align: left;
+}
+label{
+    font-size: 25px;
+}
+#task{
+    height: 30px;
+    width: 50px;
+}
