@@ -1,165 +1,4 @@
-<html>
-<head>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f2f2f2;
-            margin: 0;
-        }
-        .calculator {
-            width: 300px;
-            background-color: #fff;
-            border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        .display {
-            width: 100%;
-            height: 50px;
-            text-align: right;
-            font-size: 1.5rem;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: none;
-            background-color: #ffeb3b;
-            border-radius: 8px;
-            color: #333;
-        }
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-        .button {
-            background-color: #03a9f4;
-            border: none;
-            font-size: 1.5rem;
-            padding: 20px;
-            cursor: pointer;
-            border-radius: 10px;
-            transition: background-color 0.3s, transform 0.2s;
-            color: white;
-        }
-        .button:hover {
-            background-color: #0288d1;
-            transform: scale(1.1);
-        }
-        .button:active {
-            transform: scale(0.95);
-        }
-        .button.clear {
-            background-color: #ff5722;
-        }
-        .button.clear:hover {
-            background-color: #e64a19;
-        }
-        .button.equal {
-            background-color: #8bc34a;
-        }
-        .button.equal:hover {
-            background-color: #689f38;
-        }
-        .button.operator {
-            background-color: #ff9800;
-        }
-        .button.operator:hover {
-            background-color: #f57c00;
-        }
-    </style>
-</head>
-<body>
-    <div class="calculator">
-        <input type="text" id="display" class="display" disabled>
-        <div class="buttons">
-            <button class="button clear" onclick="clearDisplay()">C</button>
-            <button class="button operator" onclick="appendOperation('/')">/</button>
-            <button class="button operator" onclick="appendOperation('*')">*</button>
-            <button class="button operator" onclick="appendOperation('-')">-</button>
 
-            <button class="button" onclick="appendNumber('7')">7</button>
-            <button class="button" onclick="appendNumber('8')">8</button>
-            <button class="button" onclick="appendNumber('9')">9</button>
-            <button class="button operator" onclick="appendOperation('+')">+</button>
-
-            <button class="button" onclick="appendNumber('4')">4</button>
-            <button class="button" onclick="appendNumber('5')">5</button>
-            <button class="button" onclick="appendNumber('6')">6</button>
-            <button class="button equal" onclick="calculate()">=</button>
-
-            <button class="button" onclick="appendNumber('1')">1</button>
-            <button class="button" onclick="appendNumber('2')">2</button>
-            <button class="button" onclick="appendNumber('3')">3</button>
-            <button class="button" onclick="appendNumber('0')">0</button>
-        </div>
-    </div>
-
-    <script>
-        let currentInput = '';
-        let currentOperation = '';
-        let previousInput = '';
-
-        function appendNumber(number) {
-            currentInput += number;
-            document.getElementById('display').value = `${previousInput} ${currentOperation} ${currentInput}`;
-        }
-
-        function appendOperation(operation) {
-            if (currentInput === '') return;
-            if (previousInput !== '') {
-                calculate(); // Calculate the previous operation before appending a new one
-            }
-            currentOperation = operation;
-            previousInput = currentInput;
-            currentInput = '';
-            document.getElementById('display').value = `${previousInput} ${currentOperation}`;
-        }
-
-        function calculate() {
-            if (previousInput === '' || currentInput === '') return;
-            let result;
-            let prev = parseFloat(previousInput);
-            let current = parseFloat(currentInput);
-
-            switch (currentOperation) {
-                case '+':
-                    result = prev + current;
-                    break;
-                case '-':
-                    result = prev - current;
-                    break;
-                case '*':
-                    result = prev * current;
-                    break;
-                case '/':
-                    if (current === 0) {
-                        alert("Cannot divide by zero");
-                        return;
-                    }
-                    result = prev / current;
-                    break;
-                default:
-                    return;
-            }
-
-            currentInput = result.toString();
-            currentOperation = '';
-            previousInput = '';
-            document.getElementById('display').value = currentInput;
-        }
-
-        function clearDisplay() {
-            currentInput = '';
-            previousInput = '';
-            currentOperation = '';
-            document.getElementById('display').value = '';
-        }
-    </script>
-</body>
-</html>
 Day2:
 CSS:
 **Three types of CSS:
@@ -297,18 +136,20 @@ There are two types of functions :
 --name functions which have function names 
 --anonymous functions which do not have function names
 
-**Arrow function (ECMA script)
+->Arrow function (ECMA script)
 --Shortest and modern way to create a function in js
 --Need not use function keyword
 --Should use arrow to denote arrow function
 --If there is only oneparameter then the round bracket ofr the parameter is optional in this function
 --if there is only one statement in the body then the flower bracjket is also optional
 
-**callback function (ECMA )
-Default parameter:(introduced in ECMA script)
-when we try to call a function a forget a argument and thta time if u wanna pass asomething whenevr argument is not defined then use defualt is used whe we have not passed the argument
+->callback function (ECMA )
 
-Nested function: function inside another function
+
+->Default parameter:(introduced in ECMA script)
+when we try to call a function a forget a argument and thta time if u wanna pass something whenevr argument is not defined then use defualt is used whe we have not passed the argument
+
+->Nested function: function inside another function
 
 **Objects:
 collection of keys and values pair
@@ -331,9 +172,51 @@ to get the reference of dom element
 ->getElementsByClassName() - html collection of elements
 ->getElementsByTagName() - html collection 
 ->querySelector()- going to select first matching element
-->querySelectorAll() - list of all the elements
+->querySelectorAll() - returns Nodelist of all the elements
 
 Predefined functions available in javascript :
  ->getAttribute() - we can get the value of a particular element
- -> can set the value of a attribute for a particular element
+ ->setAttribute() - can set the value of a attribute for a particular element
+*********************************************************************************************************************************************
 
+Day 4:
+**Import and export:
+export from the file which has the functions and import it into the file where u wanna perofrm or call the functions
+--if there is only on function in the file then at the end type - export default functionname;
+
+**Asynchronous and synchronous programming:
+->synchronous :
+At a time one task can be prerformed in a systematic order from top to bottom because is a single
+->Asynchronous :
+if we want to execite multiple tasks at same time then this programming can be used.
+
+backtick operator (``) was introduced in ECMA
+to write anytihng in the webpage - .innerHTML
+
+**Promise:
+promise represents a value that may be available now, later or never
+It has 3 states:
+->Pending - later - waiting to get the value
+->Resolved - now - data is available
+->Rejected - never - got some errors
+
+asynch - make a function return a promise
+await - first promise should be resolved and thne whatever is there is going to return 
+
+**ES6(ECMA script 2015):
+Javascript version it gives how to write code
+->let and const
+->arrow function
+->Template literals: embedd variables inside a string
+->Array Destructuring: same as object destructuring
+->spread Operators - if we want to print a new array with same elements as the before array and also add new two elements(its denoted by 3 dots ...)
+destructuring of array elements
+-> for in and for of
+-> class
+->promise 
+->async await
+->import export
+->Rest operator -  is used collect multiple elements into a single array or object(represented by 3 dots (...))
+->Map & set: 
+Map - collection of data where we can store data as keys adn values
+set - cannot store duplicate elements in a set only unique elements are stored in it
