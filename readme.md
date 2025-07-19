@@ -179,10 +179,10 @@ Predefined functions available in javascript :
  ->setAttribute() - can set the value of a attribute for a particular element
 *********************************************************************************************************************************************
 
-Day 4:
+Day 5:
 **Import and export:
 export from the file which has the functions and import it into the file where u wanna perofrm or call the functions
---if there is only on function in the file then at the end type - export default functionname;
+--if there is only one function in the file then at the end type - export default functionname;
 
 **Asynchronous and synchronous programming:
 ->synchronous :
@@ -218,5 +218,60 @@ destructuring of array elements
 ->import export
 ->Rest operator -  is used collect multiple elements into a single array or object(represented by 3 dots (...))
 ->Map & set: 
-Map - collection of data where we can store data as keys adn values
+Map - collection of data where we can store data as keys and values
 set - cannot store duplicate elements in a set only unique elements are stored in it
+*********************************************************************************************************************************************
+
+Day 6:
+React:
+--Javascript library for building user interface
+--primarily created and maintained by facebook
+--It allows developers to create large web application that can update and render efficiently in response to data changes
+--Follows component based architecture where user interface is broken into small and reusable interface
+
+>>component is a small part of inteface and is reusable
+javascript function or class is also component 
+Using components can break our app into small parts and reuse
+
+Key features:
+->Declarative UI: decsribe what we want,the react updates the ui whne the data changes.
+->Component based: Encapsulate the logic and layout in a reusable component.
+->Virtual DOM: React uses virtual Dom to optimize the update and minimize direct manipulation.
+->Unidirectional Dataflow: Data is flown only in one direction from parent to child.
+->Strong ecosystem: large number of lib tools and community suppport.
+
+**Creating React application using CRA tool:
+CRA tool -create React app
+npx - node package executer
+when building react web based application two lib are req -  react adn react-dom
+when building react mobile application -  react and react-native
+node modules - All the libraries required to run the project are available in node modules 
+public folder consists all the static assests available by root url
+In src foledr we can create ouyr own component
+Inside manifest file progessive web app features
+index.js is the entry point of the react application
+react dom contains a div nd inside it an app component
+React.Strictmode - for security purposes
+npm start is req
+package.json - list of all dependencies and metadata or scripts of the project
+build file consists of html css and js file for the respective component because brwoser will not understand react etc
+In app.js we cant return multiple elements so to resolve that we can wrap it inside a component
+
+**Creating React application using vite tool:
+Only the dependencies adn loib required now are installed by vite tool 
+This tool is faster
+In vite tool node modules are not installed on its own if we need to intall then we need to give npm install
+Using dev because the package.json has dev in the script
+There is no index.js file in vite tool so considering main.jsx as index.js file.
+main.jsx is the entry point for the vite react application
+No need for React-dom because evrything is stored in a Virtaul-dom
+npm run dev
+jsx javascript with html or xml
+
+
+
+In react we have 2 types of components:
+-> functional component - component created by a functional keyword
+                          modern way to create a compoennt
+-> class component - component created with the help of class
+                    older way to create a component

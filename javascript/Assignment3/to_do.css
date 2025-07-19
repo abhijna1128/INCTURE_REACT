@@ -23,7 +23,7 @@
 label{
     font-size: 25px;
 }
-#task{
+.task-checkbox{
     height: 30px;
     width: 50px;
 }

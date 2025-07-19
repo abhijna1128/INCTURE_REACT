@@ -12,20 +12,25 @@
     <input type="text" id="display" placeholder="Enter the task here">
     <button class="add" onclick="addTask()">Add Task</button>
     <h2>Tasks</h2>
-    <ul>
-       <li><input type="checkbox" id="task" >
-        <label>Coding</label></li><br>
+    <ul id="task-list">
+       <li><input type="checkbox" class="task-checkbox" >
+        <label>Coding</label><br>
         <button class="delete" onclick="deleteTask()">Delete</button><br><br>
-        <li><input type="checkbox" id="task">
-        <label>Aptitude</label></li><br>
+        </li>
+        <li><input type="checkbox" class="task-checkbox">
+        <label>Aptitude</label><br>
          <button class="delete" onclick="deleteTask()">Delete</button><br><br>
-       <li><input type="checkbox" id="task">
-        <label>DSA</label></li> <br><button class="delete" onclick="deleteTask()">Delete</button><br><br>
-       <li><input type="checkbox" id="task">
-        <label>Web development</label></li> <br> <button class="delete" onclick="deleteTask()">Delete</button><br><br>
-        <li><input type="checkbox" id="task">
-        <label>DBMS</label></li><br>
+         </li>
+       <li><input type="checkbox" class="task-checkbox">
+        <label>DSA</label> <br><button class="delete" onclick="deleteTask()">Delete</button><br><br>
+        </li>
+       <li><input type="checkbox" class="task-checkbox">
+        <label>Web development</label> <br> <button class="delete" onclick="deleteTask()">Delete</button><br><br>
+        </li>
+        <li><input type="checkbox" class="task-checkbox">
+        <label>DBMS</label><br>
         <button class="delete" onclick="deleteTask()">Delete</button> <br>
+        </li>
     </ul>
 <script src=to_do.js>
 </script>
