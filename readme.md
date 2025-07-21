@@ -275,3 +275,22 @@ In react we have 2 types of components:
                           modern way to create a compoennt
 -> class component - component created with the help of class
                     older way to create a component
+******************************************************************************************************************************************
+Day 7:
+
+Props:
+--short form of properties
+--if we need to pass the data from one component to other then props is used.
+--component is passed from parent to child
+--props are read-only
+--props cant be changed inside the child component inside child compenent only read only is possible
+--props helps make component reusable i.e we can use same component multiple times with different data 
+--It can be of any type string numner array object function etc
+
+ Prop destructuring:
+ Reading the value from props and stroing in some variable
+
+ In react we cannot use variable to store and track the value
+
+ State is a container or  to store something and whose values can be tracked by react
+ built in object in react  that lets our component remember value over time
