@@ -10,6 +10,8 @@ import Store from "./Store.jsx"
 import Counter from "./Counter.jsx"
 import NewComp from "./NewComp.jsx"
 import Rendercomp from "./Rendercomp.jsx"
+import FirstEvent from "./FirstEvent.jsx"
+
 function App() {
   // const [count, setCount] = useState(0)
 
@@ -54,7 +56,8 @@ function App() {
       {/* <Store/> */}
       {/* <Counter/> */}
       {/* <NewComp/> */}
-      <Rendercomp/>
+      {/* <Rendercomp/> */}
+      <FirstEvent/>
 
     </div>
    )

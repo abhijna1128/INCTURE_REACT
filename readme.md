@@ -294,3 +294,16 @@ Props:
 
  State is a container or  to store something and whose values can be tracked by react
  built in object in react  that lets our component remember value over time
+********************************************************************************************************************************************
+
+Day 8:
+Event :
+action performed on browser is event
+keypressed,buttnonclick 
+
+changing input event:
+
+
+
+onKeyUp- whne the key pressed is released the event occurs
+onkeyDown - when we press the key event occurs

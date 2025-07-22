@@ -1,0 +1,19 @@
+function shortestPalindrome(s){
+    if (s) {
+    if (s.split('').reverse().join('') === s) {
+        return s;
+    }
+
+    let n=s.length;
+    let splits=s.split(s[0]);
+    let j=splits[1];
+    //  return j;
+    let size=j.length;
+    let rev=j.split('').reverse().join('')
+    let pal=rev+s;
+        return pal;
+    }
+}
+console.log(shortestPalindrome("abcd"));
+
+
