@@ -307,3 +307,13 @@ changing input event:
 
 onKeyUp- whne the key pressed is released the event occurs
 onkeyDown - when we press the key event occurs
+
+
+
+List: collection of items when we store inside and array
+
+Key:special string attribute that need to be included while creating a list of elements in react.
+Helps react understand which items are added,chnaged or removed.
+key should be unique among siblings
+
+cannot used for or for of in return so use map

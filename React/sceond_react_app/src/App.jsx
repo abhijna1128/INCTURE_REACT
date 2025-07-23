@@ -11,6 +11,13 @@ import Counter from "./Counter.jsx"
 import NewComp from "./NewComp.jsx"
 import Rendercomp from "./Rendercomp.jsx"
 import FirstEvent from "./FirstEvent.jsx"
+import FirstList from "./component/FirstList.jsx"
+import SecList from "./component/SecList.jsx"
+import EmployeeList from "./component/EmployeeList.jsx"
+import CourseList from "./component/CourseList.jsx"
+import TableList from "./component/TableList.jsx"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import BootstrapTable from "./component/BootstrapTable.jsx"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -57,8 +64,13 @@ function App() {
       {/* <Counter/> */}
       {/* <NewComp/> */}
       {/* <Rendercomp/> */}
-      <FirstEvent/>
-
+      {/* <FirstEvent/> */}
+      {/* <FirstList/> */}
+      {/* <SecList/> */}
+      {/* <EmployeeList/> */}
+      {/* <CourseList/> */}
+      {/* <TableList/> */}
+      <BootstrapTable/>
     </div>
    )
 }
