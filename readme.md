@@ -307,8 +307,8 @@ changing input event:
 
 onKeyUp- whne the key pressed is released the event occurs
 onkeyDown - when we press the key event occurs
-
-
+*******************************************************************************************************************************************
+Day 9:
 
 List: collection of items when we store inside and array
 
@@ -317,3 +317,38 @@ Helps react understand which items are added,chnaged or removed.
 key should be unique among siblings
 
 cannot used for or for of in return so use map
+*********************************************************************************************************************************************
+Day
+
+Lifecycle:
+A componenet has to go through different stages from creation to deletion.These stages are called lifecycle of a component.
+
+D:\incture_react_004>git config --global user.name
+CSESCEM
+
+D:\incture_react_004>git config --global user.email
+office.cs@sahyadri.edu.in
+
+Major ifecycle phases in class component:
+->Mounting - component is created and inserted with DOM
+
+->Updating: component is updated due to state and props changes is called updating
+
+->Unmounting - Remove the component from DOM
+
+Methods for Mounting phase:
+->constructor - initialize the state and binds the sate wityh the methods
+->static getDeriveStateFromProps() - sync our states with props
+->render() - return a user interface (JSX)
+->componentDidMount() - 
+
+Methods in Updating phase:
+->static getDeriveStateFromProps() - again called when updating....compoenent is re-rendering due to updating
+->shouldComponentUpdate() - this method decides whther to update the component or not
+->render() - invoked again when the component is updated
+->getSnapshotBeforeUpdate() - capture the dom value before update
+->componentDidUpdate() - runs side-effects after dom.
+
+Methods in Unmounting phase:
+->componentWillUnmount() - 
+

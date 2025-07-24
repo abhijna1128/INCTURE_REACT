@@ -18,6 +18,9 @@ import CourseList from "./component/CourseList.jsx"
 import TableList from "./component/TableList.jsx"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BootstrapTable from "./component/BootstrapTable.jsx"
+import LifeCycleFirst from "./life_cycle_component/LifeCycleFirst.jsx"
+import LifeCycleSecond from "./life_cycle_component/LifeCycleSecond.jsx"
+import LifeCycleThird from "./life_cycle_component/LifeCyclethird.jsx"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -70,7 +73,11 @@ function App() {
       {/* <EmployeeList/> */}
       {/* <CourseList/> */}
       {/* <TableList/> */}
-      <BootstrapTable/>
+      {/* <BootstrapTable/> */}
+      {/* <LifeCycleFirst/> */}
+      {/* <LifeCycleSecond/> */}
+      <LifeCycleThird/>
+
     </div>
    )
 }
