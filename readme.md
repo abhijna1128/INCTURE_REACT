@@ -350,5 +350,18 @@ Methods in Updating phase:
 ->componentDidUpdate() - runs side-effects after dom.
 
 Methods in Unmounting phase:
-->componentWillUnmount() - 
+->componentWillUnmount() - clears or cleans up
+*********************************************************************************************************************************************
+Day 11:
 
+Hooks:
+special type of function introduced in react to use state and other functions in your functional component without creating class component.
+If we want to use state in functional components then hooks are needed.
+->useState - used to have state in our functional component
+->useEffect -  can run side-effects in functional components.
+syntax of useEffect() -- useEffect(()=>{},an array of dependecies)
+->useMemo - It is a react hook that memoizes the result of an expensive function and only recomputes it when dependency change
+const name=useMemo(()=>{},dependency array)
+expensive function is the function that takes lot of time adn resources 
+
+->useRef  - react hook that returns a mutable reference object which persists across renders

@@ -21,6 +21,16 @@ import BootstrapTable from "./component/BootstrapTable.jsx"
 import LifeCycleFirst from "./life_cycle_component/LifeCycleFirst.jsx"
 import LifeCycleSecond from "./life_cycle_component/LifeCycleSecond.jsx"
 import LifeCycleThird from "./life_cycle_component/LifeCyclethird.jsx"
+import FirstComp from "./hooks/FirstComp.jsx"
+import SecondComp from "./hooks/secondComp.jsx"
+import ThirdComp from "./hooks/ThirdComp.jsx"
+import FourthComp from "./hooks/FourthComp.jsx"
+import FifthComp from "./hooks/FifthComp.jsx"
+import Sixth from "./hooks/Sixth.jsx"
+import Parent from "./hooks/Parent.jsx"
+import FirstCounter from "./custom_hooks/FirstCounter.jsx"
+import SecCounter from "./custom_hooks/SecCounter.jsx"
+import ThirdCounter from "./custom_hooks/ThirdCounter.jsx"
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -76,7 +86,18 @@ function App() {
       {/* <BootstrapTable/> */}
       {/* <LifeCycleFirst/> */}
       {/* <LifeCycleSecond/> */}
-      <LifeCycleThird/>
+      {/* <LifeCycleThird/> */}
+      {/* <FirstComp/> */}
+      {/* <SecondComp/> */}
+      {/* <ThirdComp/> */}
+      {/* <FourthComp/> */}
+      {/* <FifthComp/> */}
+      {/* <Sixth/> */}
+      {/* <Parent/> */}
+      <FirstCounter/><br></br>
+      <SecCounter/><br></br>
+      <ThirdCounter/>
+
 
     </div>
    )
