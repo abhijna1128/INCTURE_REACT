@@ -365,3 +365,10 @@ const name=useMemo(()=>{},dependency array)
 expensive function is the function that takes lot of time adn resources 
 
 ->useRef  - react hook that returns a mutable reference object which persists across renders
+
+
+global storage for which we can share the components
+
+create context method - to create the global storage
+provider - should pass value and children
+Use context - to get the value from the storage

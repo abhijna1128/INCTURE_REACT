@@ -31,9 +31,14 @@ import Parent from "./hooks/Parent.jsx"
 import FirstCounter from "./custom_hooks/FirstCounter.jsx"
 import SecCounter from "./custom_hooks/SecCounter.jsx"
 import ThirdCounter from "./custom_hooks/ThirdCounter.jsx"
+import FirstContext from "./context/FirstContext.jsx"
+import { UserContext } from "./context/UserContext.jsx"
+import { ThemeProvider } from "./new_context/ThemeContext.jsx"
+import ThemeToggleComponent from "./new_context/ThemeToggleComponent.jsx"
 
 function App() {
   // const [count, setCount] = useState(0)
+  const username="Abhijna";
 
    return (
     // <>
@@ -94,9 +99,19 @@ function App() {
       {/* <FifthComp/> */}
       {/* <Sixth/> */}
       {/* <Parent/> */}
-      <FirstCounter/><br></br>
+      {/* <FirstCounter/><br></br>
       <SecCounter/><br></br>
-      <ThirdCounter/>
+      <ThirdCounter/> */}
+      {/* <FirstContext username={username}/> */}
+      {/* <UserContext.Provider value={username}>
+        <div>
+          <FirstContext/>
+        </div>
+      </UserContext.Provider> */}
+      <ThemeProvider>
+        <h1>theme toggle app</h1>
+        <ThemeToggleComponent/>
+      </ThemeProvider>
 
 
     </div>
