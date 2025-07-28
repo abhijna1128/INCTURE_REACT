@@ -372,3 +372,27 @@ global storage for which we can share the components
 create context method - to create the global storage
 provider - should pass value and children
 Use context - to get the value from the storage
+
+
+Local storge:
+--Browser based storage where we can store our data in the form of keys and values.
+--even after refreshing the page data is available
+--stored in the form of string format
+--5mb
+setItem() -  store in the local storage
+getItem() - to get the value from local storage
+getItem() - remove particular data fmo local storae
+clearItem() - remove akk the data from the local storae
+
+json.stringify() - convert data of string type onject type to json type 
+json.parse
+
+Session Storage:
+--That help us to store data in browser temporarily
+--key and value
+--5mb
+--once tab is closed data is lost
+--
+
+name email checbox for gender 
+cuty phne number'
