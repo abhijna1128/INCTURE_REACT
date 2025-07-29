@@ -1,22 +1,28 @@
-import { createContext,useState } from "react";
+import { createContext, useState, useCallback } from "react";
 
+export const TaskContext = createContext();
 
-export const TaskContext=createContext();
-export const TaskProvider=({children})=>{
-    const [tasks,setTasks]=useState([])
+export const TaskProvider = ({ children }) => {
+  const [tasks, setTasks] = useState([]);
 
-  const addTask = (task) => {
+ 
+  const addTask = useCallback((task) => {
     setTasks((prevTasks) => [...prevTasks, task]);
-  };
- const updateTask = (id, updatedTask) => {
+  }, []);
+
+  const updateTask = useCallback((id, updatedTask) => {
     setTasks((prevTasks) =>
-      prevTasks.map((task) => (task.id === id ? { ...task, ...updatedTask } : task))
+      prevTasks.map((task) =>
+        task.id === id ? { ...task, ...updatedTask } : task
+      )
     );
-  };
-  const deleteTask = (id) => {
+  }, []);
+
+  const deleteTask = useCallback((id) => {
     setTasks((prevTasks) => prevTasks.filter((task) => task.id !== id));
-  };
-    return (
+  }, []);
+
+  return (
     <TaskContext.Provider value={{ tasks, addTask, updateTask, deleteTask }}>
       {children}
     </TaskContext.Provider>

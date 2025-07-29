@@ -396,3 +396,24 @@ Session Storage:
 
 name email checbox for gender 
 cuty phne number'
+
+React routing:
+to navigate from one page to another page without loading our page- routing is used
+->BrowserRouter - parent component that keeps user interface sync with the current url
+->Routes - is a container where we have multiple route
+->Route - on execution of which component route is gonna execute 
+          maps the url with component 
+          can put url link with the component
+
+path -  url 
+element - component
+
+useparam - read our url
+
+nested routing 
+parent routing insde that other routing 
+
+searchParams
+query filter or query search paramater
+uses ?
+can set url filter with this

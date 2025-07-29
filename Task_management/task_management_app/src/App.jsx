@@ -1,23 +1,31 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-// import './App.css'
-
-import { TaskContext } from './context/TaskContext'
-import { TaskProvider } from './context/TaskContext'
-import TaskForm from './component/TaskForm'
+import React, { useContext } from "react";
+import { TaskProvider } from "./context/TaskContext";
+import TaskForm from "./component/TaskForm";
+import TaskList from "./component/TaskList";
+import { ThemeProvider, ThemeContext } from "./context/ThemeContext";
+import "./App.css";
 
 function App() {
-  // const [count, setCount] = useState(0)
+  return (
+    <ThemeProvider>
+      <TaskProvider>
+        <Content />
+      </TaskProvider>
+    </ThemeProvider>
+  );
+}
+
+function Content() {
+  const { toggleTheme, themeStyles } = useContext(ThemeContext);
 
   return (
-      <div>
-         {/* <TaskProvider>
+    <div className="app-wrapper" style={themeStyles}>
+      <h2>Task Management App</h2>
+      <button onClick={toggleTheme}>Toggle Theme</button>
+      <TaskForm />
       <TaskList />
-    </TaskProvider> */}
-      <TaskForm/>
-      </div>
-  )
+    </div>
+  );
 }
 
 export default App;
