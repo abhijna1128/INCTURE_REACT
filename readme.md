@@ -417,6 +417,7 @@ searchParams
 query filter or query search paramater
 uses ?
 can set url filter with this
+********************************************************************************************************************************************
 
 Form:
 block of website where user can enter information like email phone number etc
@@ -425,3 +426,9 @@ useRef - to get data from uncontrolled form
 
 Form Validation :
 validating the data 
+********************************************************************************************************************************************
+
+Libaries for validation:
+->Formik
+->Yup
+->React Hook Form - this is more light weight than other two

@@ -13,6 +13,10 @@ import FirstForm from "./form/FirstForm";
 import SecForm from "./form/SecForm";
 import ThirdForm from "./form/ThirdForm";
 import Form1 from "./form/Form1";
+import FormValid from "./external_form/FormValid";
+import RegistrationForm from "./external_form/RegistrationForm";
+import Form2 from "./external_form/Form2";
+import Form3 from "./external_form/Form3";
 
 function App() {
   return (
@@ -67,7 +71,11 @@ function App() {
        {/* <FirstForm/> */}
       {/* <SecForm/> */}
       {/* <ThirdForm/> */}
-      <Form1/>
+      {/* <Form1/> */}
+      {/* <FormValid/> */}
+      {/* <RegistrationForm/> */}
+      {/* <Form2/> */}
+      <Form3/>
 
     </div>
   );
