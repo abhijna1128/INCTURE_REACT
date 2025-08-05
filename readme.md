@@ -432,3 +432,80 @@ Libaries for validation:
 ->Formik
 ->Yup
 ->React Hook Form - this is more light weight than other two
+********************************************************************************************************************************************
+
+Redux:
+--It is a js library used to manage the state of aplication.
+--Centered data ware house where all the data is stord and managed in a preditable way.
+--Its mainly required to scatter states in many components.
+--Even for overcoming props drilling this can be used.
+--Data will be consistant.
+--Easy to use in large scale applications.
+
+When to go for redux:
+When we have multiple components sharing data or state we go for redux.
+When we need to manage complex dataflow.
+When we build large appplications.
+When we want predictable and testable states.
+
+When not to go for redux:
+When we are building small apps.
+when there are few coponents.
+data is managed with useState.
+
+Architecture of redux:
+
+->Store - Store holds the entire data or state of the application
+          Only one store is allowed in a redux app
+
+->Action - This describes what happened
+           Simple js object that describes what we want to do
+           Has two things - type of action is required - determines type of action
+                            payload is optional -  optinal dta to be sent with the action
+
+->Reducer -It decides how to change the state or data
+           function that decides how to update the state based on the actions
+           Two things - current state ,action 
+
+->Dispatch - sends an action to the reducer
+             
+->UI(Subscriber) - React component that uses state or data that is managed by the store
+                   implement redux state by using useSelector 
+                   useDispatch for dispatching an action
+      
+                                        User click ->button
+
+                                        dispatch(send action)
+                                        
+                                        store receives action
+
+                                        Reducer process action
+                                        
+                                        New state returned to store
+
+                                        React UI re-renders with new state
+To insatll library of redux:
+npm install redux react -redux
+
+libarry to connect redux with react - react-redux
+
+
+
+1. Cloud-Based Network Monitoring & Intrusion Detection System
+What it does: Monitors a network for unusual activity, logs, and alerts the admin.
+
+Tech Stack:
+
+Python (for packet sniffing using scapy)
+
+OS-level access to capture packets
+
+Networking: Socket programming, TCP/IP stack
+
+Flask + React for dashboard
+
+MongoDB to store logs
+
+Deploy on AWS EC2, with auto-scaling and logging (CloudWatch)
+
+Skills demonstrated: Networking, OS internals, real-time data handling, cloud, security
