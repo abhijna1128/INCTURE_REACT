@@ -436,7 +436,7 @@ Libaries for validation:
 
 Redux:
 --It is a js library used to manage the state of aplication.
---Centered data ware house where all the data is stord and managed in a preditable way.
+--Centered data warehouse where all the data is stord and managed in a preditable way.
 --Its mainly required to scatter states in many components.
 --Even for overcoming props drilling this can be used.
 --Data will be consistant.
@@ -461,7 +461,7 @@ Architecture of redux:
 ->Action - This describes what happened
            Simple js object that describes what we want to do
            Has two things - type of action is required - determines type of action
-                            payload is optional -  optinal dta to be sent with the action
+                            payload is optional -  optional data to be sent with the action
 
 ->Reducer -It decides how to change the state or data
            function that decides how to update the state based on the actions
@@ -486,8 +486,46 @@ Architecture of redux:
                                         React UI re-renders with new state
 To insatll library of redux:
 npm install redux react -redux
-
 libarry to connect redux with react - react-redux
+
+API:
+Set of rules and protoclos that allow software to communicate with each other.
+
+Rest API:(Representational state Transfer Api)
+Set of rules and protocols to build scalable web services using http
+Key features:
+--Stateless -  not able to remember the previous request,independent request.
+               As rest API follows http portool it is stateless
+--Client server 
+--HTTP methods: GET,POST,PUT,DELETE etc
+--Endpoint:
+URL through which action is executed
+
+JSON:(Javascript object notation)
+
+Status code:3 digit number
+200 - OK
+201 - Created
+204 - No content
+400 - Bad request
+401 - Unauthorized
+500 - Internal Server Error
+404 - Not found
+
+Axios:
+Promise based http client that is used because of its cleaner sytax and additional feature compared to fetch
+npm install axios
+
+Middleware:
+Its a function that sits between our action adn reducer
+We can intercept,modify,delete or cancel our action before it reaches to reducer
+
+If we want to perform asynchronous operations like api call,log actions for debugging,handle authentications, loading ondicators etc we use Middleware
+
+npm install react-redux thunk
+
+Error handling in react:
+graceful catching and managing error inside our application so that user do not face blank screen
 
 
 
