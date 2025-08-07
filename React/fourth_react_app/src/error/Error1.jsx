@@ -1,7 +1,10 @@
+import Error2 from "./Error2";
+
+
+
 function Error1(props){
    try{
-
-    //throw new Error("its error");
+    throw new Error("its error");
    }
    catch{
     return <p> Some error occured in first error component</p>

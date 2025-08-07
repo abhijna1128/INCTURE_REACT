@@ -517,7 +517,7 @@ Promise based http client that is used because of its cleaner sytax and addition
 npm install axios
 
 Middleware:
-Its a function that sits between our action adn reducer
+Its a function that sits between our action and reducer
 We can intercept,modify,delete or cancel our action before it reaches to reducer
 
 If we want to perform asynchronous operations like api call,log actions for debugging,handle authentications, loading ondicators etc we use Middleware
@@ -526,6 +526,34 @@ npm install react-redux thunk
 
 Error handling in react:
 graceful catching and managing error inside our application so that user do not face blank screen
+*********************************************************************************************************************************************
+
+Error Boundary:
+Special type of class component that catches js error anywhere in its child component
+log those errors and display a callback ui instead of crashing the ui.
+
+
+Typescript:
+scribbling of javascript
+npm create vite@latest my_typescript_app --template typescript 
+
+
+To convert from typescript app to javascript app:
+change all file names manually from jsx to tsx
+in main add ! after (root)
+npm install --save-dev typescript @types/react @types/react-dom
+npx tsc --init
+then Add a tsconfig.json file
+
+
+
+
+
+
+
+
+
+
 
 
 

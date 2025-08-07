@@ -10,6 +10,8 @@ import User2 from './api/User2'
 import User3 from './api/User3'
 import Fetch from './middleware/Fetch'
 import Error1 from './error/Error1'
+import Error2 from './error/Error2'
+import ErrorBoundary from './error/ErrorBoundary'
 
 
 function App() {
@@ -26,7 +28,13 @@ function App() {
       {/* <User2/> */}
       {/* <User3/> */}
       {/* <Fetch/> */}
-      <Error1/>
+      {/* <Error1 name="Abhi"/> */}
+      {/* <Error2/> */}
+      <ErrorBoundary>
+      <Error1 name="Abhi"/>
+      <Error2/>
+      </ErrorBoundary>
+
     </div>
   )
 }
