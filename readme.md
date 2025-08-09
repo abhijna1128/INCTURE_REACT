@@ -544,7 +544,17 @@ in main add ! after (root)
 npm install --save-dev typescript @types/react @types/react-dom
 npx tsc --init
 then Add a tsconfig.json file
+*********************************************************************************************************************************************
 
+Testing:
+writing a code to check if it works a u expected
+
+->Jest - testing framework
+         tools that runs our test and tells if its pass or fail
+->RTL - react testing library
+        help us test our react component the way the real user using 
+        it focuses or what our user see ,not the implementation
+NCRA tool we need not create any testing library its already installed
 
 
 
