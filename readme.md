@@ -556,6 +556,12 @@ writing a code to check if it works a u expected
         it focuses or what our user see ,not the implementation
 NCRA tool we need not create any testing library its already installed
 
+Testing for vite tool react App:
+Steps:
+npm install -D jest @testing-library/react ts-jest @types/jest ts-node @testing-library/jest-dom jest-environment-jsdom @testing-library/user-event
+
+
+
 
 
 
